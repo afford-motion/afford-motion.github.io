@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Afford-Moiton</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <!-- <link rel="stylesheet" href="static/css/fontawesome.all.min.css"> -->
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <!-- <script defer src="static/js/fontawesome.all.min.js"></script> -->
+  <script src="https://kit.fontawesome.com/edbfd41333.js" crossorigin="anonymous"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+<section class="section head-section">
+  <div class="container is-max-desktop">
+    <div class="is-centered">
+      <div class="has-text-centered">
+        <h2 class="title is-2">Move as You Say, Interact as You Can:<br>Language-guided Human Motion Generation with Scene Affordance</h2>
+        
+        <div class="is-size-5">
+          <span class="author-block">
+            <a href="https://silvester.wang/" target="_blank">Zan Wang</a><sup>1,2</sup>,</span>
+          <span class="author-block">
+            <a href="https://yixchen.github.io/" target="_blank">Yixin Chen</a><sup>2</sup>,</span>
+          <span class="author-block">
+            <a href="https://buzz-beater.github.io/" target="_blank">Baoxiong Jia</a><sup>2</sup>,</span>
+          <span class="author-block">
+            <a href="https://xiaoyao-li.github.io/" target="_blank">Puhao Li</a><sup>2,3</sup>,</span>
+          <span class="author-block">
+            <a href="https://jinluzhang.site/" target="_blank">Jinlu Zhang</a><sup>2,4</sup>,</span>
+          <br>
+          <span class="author-block">
+            <a href="/" target="_blank">Jingze Zhang</a><sup>2,3</sup>,</span>
+          <span class="author-block">
+            <a href="http://tengyu.ai/" target="_blank">Tengyu Liu</a><sup>2</sup>,</span>
+          <span class="author-block">
+            <a href="https://yzhu.io/" target="_blank">Yixin Zhu</a><sup>5✉️</sup>,</span>
+          <span class="author-block">
+            <a href="https://liangwei-bit.github.io/web/" target="_blank">Wei Liang</a><sup>1,6✉️</sup>,</span>
+          <span class="author-block">
+            <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a><sup>2✉️</sup></span>
+        </div>
+
+        <div class="is-size-6">
+          <span class="author-block">
+            <sup>1</sup>School of Computer Science & Technology, Beijing Institute of Technology<br>
+            <sup>2</sup>National Key Laboratory of General Artificial Intelligence, BIGAI &nbsp;&nbsp; <sup>3</sup>Dept. of Automation, Tsinghua University<br>
+            <sup>4</sup>CFCS, School of Computer Science, Peking University &nbsp;&nbsp; <sup>5</sup>Institute for AI, Peking University<br>
+            <sup>6</sup>Yangtze Delta Region Academy of Beijing Institute of Technology, Jiaxing
+          </span>
+          <br>
+          <span class="eql-cntrb"><sup>✉️</sup>indicates corresponding author</span>
+        </div>
+
+        <div class="link-block">
+          <span>
+            <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+              class="external-link button is-normal is-rounded is-outlined is-danger">
+              <span class="icon">
+                <i class="fas fa-file-pdf"></i>
+              </span>
+              <span>Paper</span>
+            </a>
+          </span>
+
+          <span>
+            <a href="https://github.com/YOUR REPO HERE" target="_blank"
+              class="external-link button is-normal is-rounded is-outlined is-primary">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+            </a>
+          </span>
+
+          <span>
+            <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+              class="external-link button is-normal is-rounded is-outlined is-info">
+              <span class="icon">
+                <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section content-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-10">
+        <video  autoplay controls muted loop height="100%">
+          <source src="static/videos/banner_video.mp4" type="video/mp4">
+        </video>
+        <h6 class="subtitle is-6">
+          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat
+          pretium mi. Maecenas dignissim tincidunt vestibulum.
+        </h6>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-12">
+        <h3 class="title is-3">🥰 Abstract</h3>
+        <div class="has-text-justified">
+          <p>
+            Despite significant advancements in text-to-motion synthesis, generating language-guided human motion within 3D environments poses substantial challenges. 
+            These challenges stem primarily from (i) the absence of powerful generative models capable of jointly modeling natural language, 3D scenes, and human motion, 
+            and (ii) the generative models' intensive data requirements contrasted with the scarcity of comprehensive, high-quality, language-scene-motion datasets. 
+            To tackle these issues, we introduce a <strong>novel two-stage framework that employs scene affordance as an intermediate representation</strong>, effectively linking 
+            3D scene grounding and conditional motion generation. Our framework comprises an Affordance Diffusion Model (ADM) for predicting explicit affordance map and an 
+            Affordance-to-Motion Diffusion Model (AMDM) for generating plausible human motions. By leveraging scene affordance maps, our method overcomes the difficulty 
+            in generating human motion under multimodal condition signals, especially when training with limited data lacking extensive language-scene-motion pairs. 
+            Our extensive experiments demonstrate that our approach consistently outperforms all baselines on established benchmarks, including HumanML3D and HUMANISE. 
+            Additionally, we validate our model's exceptional generalization capabilities on a specially curated evaluation set featuring previously unseen descriptions and scenes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-10">
+        <h2 class="title is-3">🥳 Results on HumanML3D</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <div class="bal-block">
+              <div id="h3d-one" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/h3d/m1-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/h3d/m1-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h6 class="subtitle is-6">
+              The person walks in a clockwise circle
+            </h6>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="h3d-two" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/h3d/m2-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/h3d/m2-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h6 class="subtitle is-6">
+              The person is walking forward and then back the other direction
+            </h6>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="h3d-three" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/h3d/m3-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/h3d/m3-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h6 class="subtitle is-6">
+              A person jogs forward and semi circles around to the left and then to the right
+            </h6>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="h3d-four" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/h3d/m4-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/h3d/m4-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h6 class="subtitle is-6">
+              A man squats deeply three times while raising both arms in the air as if holding a dumbell
+            </h6>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="h3d-five" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/h3d/m5-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/h3d/m5-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h6 class="subtitle is-6">
+              A person jumps from side to side right to left
+            </h6>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="h3d-six" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/h3d/m6-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/h3d/m6-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h6 class="subtitle is-6">
+              A person waves with his left hand
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-10">
+        <h3 class="title is-3">🤩 Results on HUMANISE</h3>
+
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <div class="bal-block">
+              <div id="humanise-one" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/humanise/02175_mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/humanise/02175_skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h6 class="subtitle is-6">
+              Lie down on the table
+            </h6>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="humanise-two" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/humanise/11369-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/humanise/11369-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h6 class="subtitle is-6">
+              Stand up from the table
+            </h6>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="humanise-three" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/humanise/07721_mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/humanise/07721_skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h6 class="subtitle is-6">
+              Sit on the toilet
+            </h6>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="humanise-four" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/humanise/07076_mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/humanise/07076_skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h6 class="subtitle is-6">
+              Sit on the table
+            </h6>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-10">
+        <h3 class="title is-3">😋 Results on Our Novel Evaluation Set</h3>
+
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
+            <h6 class="subtitle is-6">
+              First image description.
+            </h6>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
+            <h6 class="subtitle is-6">
+              Second image description.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-12">
+        <h3 class="title has-text-centered is-3">🥸 BibTeX</h3>
+        <div class="bibtex-block">
+          <pre><code>@inproceedings{wang2024move,
+  title={Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance},
+  author={Wang, Zan and Chen, Yixin and Jia, Baoxiong and Li, Puhao and Zhang, Jinlu and Zhang, Jingze and Liu, Tengyu and Zhu, Yixin and Liang, Wei and Huang, Siyuan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2024}
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8 has-text-centered">
+        <span>
+          This page was borrowed from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.<br>
+          Please use <b>chrome</b> for best experience. Send feedback and questions to <a href="https://silvester.wang/" target="_blank">Zan Wang</a>.
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+<script>
+  new BeforeAfter({id: '#h3d-one'});
+  new BeforeAfter({id: '#h3d-two'});
+  new BeforeAfter({id: '#h3d-three'});
+  new BeforeAfter({id: '#h3d-four'});
+  new BeforeAfter({id: '#h3d-five'});
+  new BeforeAfter({id: '#h3d-six'});
+
+  new BeforeAfter({id: '#humanise-one'});
+  new BeforeAfter({id: '#humanise-two'});
+  new BeforeAfter({id: '#humanise-three'});
+  new BeforeAfter({id: '#humanise-four'});
+</script>
+
+</html>
