@@ -70,6 +70,16 @@
 
         <div class="link-block">
           <span>
+            <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+              class="external-link button is-normal is-rounded is-outlined is-info">
+              <span class="icon">
+                <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span>
+            </a>
+          </span>
+
+          <span>
             <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
               class="external-link button is-normal is-rounded is-outlined is-danger">
               <span class="icon">
@@ -80,22 +90,12 @@
           </span>
 
           <span>
-            <a href="https://github.com/YOUR REPO HERE" target="_blank"
+            <a href="https://github.com/afford-motion/afford-motion" target="_blank"
               class="external-link button is-normal is-rounded is-outlined is-primary">
               <span class="icon">
                 <i class="fab fa-github"></i>
               </span>
               <span>Code</span>
-            </a>
-          </span>
-
-          <span>
-            <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-              class="external-link button is-normal is-rounded is-outlined is-info">
-              <span class="icon">
-                <i class="ai ai-arxiv"></i>
-              </span>
-              <span>arXiv</span>
             </a>
           </span>
         </div>
@@ -109,11 +109,10 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-10">
         <video  autoplay controls muted loop height="100%">
-          <source src="static/videos/banner_video.mp4" type="video/mp4">
+          <source src="static/videos/demo.mp4" type="video/mp4">
         </video>
         <h6 class="subtitle is-6">
-          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat
-          pretium mi. Maecenas dignissim tincidunt vestibulum.
+          We introduce a novel two-stage framework that employs scene affordance as an intermediate representation, effectively linking 3D scene grounding and conditional motion generation.
         </h6>
       </div>
     </div>
@@ -164,9 +163,9 @@
                 </div>
               </div>
             </div>
-            <h6 class="subtitle is-6">
+            <h5 class="title is-5">
               The person walks in a clockwise circle
-            </h6>
+            </h5>
           </div>
 
           <div class="item">
@@ -192,9 +191,9 @@
                 </div>
               </div>
             </div>
-            <h6 class="subtitle is-6">
+            <h5 class="title is-5">
               The person is walking forward and then back the other direction
-            </h6>
+            </h5>
           </div>
 
           <div class="item">
@@ -220,9 +219,9 @@
                 </div>
               </div>
             </div>
-            <h6 class="subtitle is-6">
+            <h5 class="title is-5">
               A person jogs forward and semi circles around to the left and then to the right
-            </h6>
+            </h5>
           </div>
 
           <div class="item">
@@ -248,9 +247,9 @@
                 </div>
               </div>
             </div>
-            <h6 class="subtitle is-6">
+            <h5 class="title is-5">
               A man squats deeply three times while raising both arms in the air as if holding a dumbell
-            </h6>
+            </h5>
           </div>
 
           <div class="item">
@@ -276,9 +275,9 @@
                 </div>
               </div>
             </div>
-            <h6 class="subtitle is-6">
+            <h5 class="title is-5">
               A person jumps from side to side right to left
-            </h6>
+            </h5>
           </div>
 
           <div class="item">
@@ -304,9 +303,9 @@
                 </div>
               </div>
             </div>
-            <h6 class="subtitle is-6">
+            <h5 class="title is-5">
               A person waves with his left hand
-            </h6>
+            </h5>
           </div>
         </div>
       </div>
@@ -340,9 +339,9 @@
                 </div>
               </div>
             </div>
-            <h6 class="subtitle is-6">
+            <h5 class="title is-5">
               Lie down on the table
-            </h6>
+            </h5>
           </div>
 
           <div class="item">
@@ -368,9 +367,9 @@
                 </div>
               </div>
             </div>
-            <h6 class="subtitle is-6">
+            <h5 class="title is-5">
               Stand up from the table
-            </h6>
+            </h5>
           </div>
 
           <div class="item">
@@ -396,9 +395,9 @@
                 </div>
               </div>
             </div>
-            <h6 class="subtitle is-6">
+            <h5 class="title is-5">
               Sit on the toilet
-            </h6>
+            </h5>
           </div>
 
           <div class="item">
@@ -424,12 +423,66 @@
                 </div>
               </div>
             </div>
-            <h6 class="subtitle is-6">
+            <h5 class="title is-5">
               Sit on the table
-            </h6>
+            </h5>
           </div>
 
+          <div class="item">
+            <div class="bal-block">
+              <div id="humanise-five" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/humanise/19270_mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/humanise/19270_skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h5 class="title is-5">
+              Walk to the refrigerator
+            </h5>
+          </div>
 
+          <div class="item">
+            <div class="bal-block">
+              <div id="humanise-six" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/humanise/18709_mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/humanise/18709_skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h5 class="title is-5">
+              Walk to the chair
+            </h5>
+          </div>
         </div>
       </div>
     </div>
@@ -440,16 +493,199 @@
 
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item">
-            <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
-            <h6 class="subtitle is-6">
-              First image description.
-            </h6>
+            <div class="bal-block">
+              <div id="novel-one" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/novel_set/00001-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/novel_set/00001-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h5 class="title is-5">
+              A person wanders in the room around the table.
+            </h5>
           </div>
+
           <div class="item">
-            <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
-            <h6 class="subtitle is-6">
-              Second image description.
-            </h6>
+            <div class="bal-block">
+              <div id="novel-two" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/novel_set/00012-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/novel_set/00012-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h5 class="title is-5">
+              A man dances on the bed happily.
+            </h5>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="novel-three" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/novel_set/00029-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/novel_set/00029-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h5 class="title is-5">
+              Someone stretches his arms overhead.
+            </h5>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="novel-four" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/novel_set/00032-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/novel_set/00032-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h5 class="title is-5">
+              A person puts something on the table.
+            </h5>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="novel-five" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/novel_set/00041-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/novel_set/00041-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h5 class="title is-5">
+              A person lies down on the floor.
+            </h5>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="novel-six" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/novel_set/00063-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/novel_set/00063-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h5 class="title is-5">
+              A person picks an object up off the floor with his left hand.
+            </h5>
+          </div>
+
+          <div class="item">
+            <div class="bal-block">
+              <div id="novel-seven" class="bal-container">
+                <div class="bal-after">
+                  <video  autoplay controls muted loop height="100%">
+                    <source src="static/videos/novel_set/00068-mesh.mp4" type="video/mp4">
+                  </video>
+                </div>
+    
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video  autoplay controls muted loop height="100%">
+                      <source src="static/videos/novel_set/00068-skel.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+    
+                <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <h5 class="title is-5">
+              A person is moving his arms around.
+            </h5>
           </div>
         </div>
       </div>
@@ -499,6 +735,16 @@
   new BeforeAfter({id: '#humanise-two'});
   new BeforeAfter({id: '#humanise-three'});
   new BeforeAfter({id: '#humanise-four'});
+  new BeforeAfter({id: '#humanise-five'});
+  new BeforeAfter({id: '#humanise-six'});
+
+  new BeforeAfter({id: '#novel-one'});
+  new BeforeAfter({id: '#novel-two'});
+  new BeforeAfter({id: '#novel-three'});
+  new BeforeAfter({id: '#novel-four'});
+  new BeforeAfter({id: '#novel-five'});
+  new BeforeAfter({id: '#novel-six'});
+  new BeforeAfter({id: '#novel-seven'});
 </script>
 
 </html>
